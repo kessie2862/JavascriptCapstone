@@ -1,0 +1,63 @@
+/*!******************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/bundle.css ***!
+  \******************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap);
+/*!**********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/bundle.css (1) ***!
+  \**********************************************************************/
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #fff;
+}
+
+/* Header Nav */
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 88%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 1.3rem 0;
+}
+
+.header-nav > a {
+  color: #636363;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.header-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  width: 88%;
+  margin: 0 auto;
+  text-align: center;
+  color: #636363;
+  margin-bottom: 2rem;
+}
+
+
+/*# sourceMappingURL=bundle.css.map*/
