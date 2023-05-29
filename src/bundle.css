@@ -30,8 +30,8 @@ body {
 
 .header-nav > a {
   color: #636363;
-  font-size: 1.5rem;
   font-weight: 700;
+  font-size: 2rem;
 }
 
 .header-nav ul {
@@ -41,8 +41,95 @@ body {
   gap: 1rem;
 }
 
+.header-nav ul li a {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
 .header-nav ul li a:hover {
   text-decoration: underline;
+}
+
+/* Meals List */
+#mealList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 88%;
+  margin: 0 auto;
+}
+
+.meal-card {
+  width: 30%;
+  margin-bottom: 3rem;
+  padding: 10px;
+  border-radius: 0.2rem;
+  background-color: #fff;
+  box-shadow:
+    rgba(9, 30, 66, 0.25) 0 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0 0 0 1px;
+}
+
+.meal-card img {
+  width: 100%;
+  height: auto;
+}
+
+footer h3 {
+  text-decoration: underline;
+}
+
+.meal-card h3 {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #636363;
+}
+
+.likes-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.heart-icon {
+  color: red;
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 1.7rem;
+}
+
+.like-count {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #636363;
+}
+
+.actions-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.comment-button {
+  background-color: #fff;
+  color: #636363;
+  border: 1px solid #ccc;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.comment-button:hover {
+  background-color: #adadad;
+  color: #fff;
+}
+
+.comment-button:focus {
+  outline: none;
 }
 
 /* Footer */
@@ -52,4 +139,5 @@ footer {
   text-align: center;
   color: #636363;
   margin-bottom: 2rem;
+  font-size: 1.5rem;
 }
