@@ -59,7 +59,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Plate it',
+      title: 'API-based Webapp',
       filename: 'index.html',
       template: 'src/template.html',
     }),
