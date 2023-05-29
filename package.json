@@ -23,7 +23,7 @@
     "babel-jest": "^29.5.0",
     "babel-loader": "^9.1.2",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
-    "css-loader": "^6.7.3",
+    "css-loader": "^6.8.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.27.5",
@@ -35,7 +35,7 @@
     "jsdom": "^22.0.0",
     "sass": "^1.62.1",
     "sass-loader": "^13.2.2",
-    "style-loader": "^3.3.2",
+    "style-loader": "^3.3.3",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
@@ -46,10 +46,10 @@
     "webpack-dev-server": "^4.15.0"
   },
   "dependencies": {
-    "webpack": "^5.84.1",
     "express": "^4.18.2",
     "mini-css-extract-plugin": "^2.7.6",
     "util": "^0.12.5",
+    "webpack": "^5.84.1",
     "webpack-dev-middleware": "^6.1.0"
   },
   "directories": {
