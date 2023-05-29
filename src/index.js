@@ -1,1 +1,5 @@
-export const add = (a, b) => a + b;
+import './bundle.css';
+
+const add = (a, b) => a + b;
+
+export default add;
