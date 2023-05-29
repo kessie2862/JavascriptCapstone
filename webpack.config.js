@@ -24,7 +24,8 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        // use: [MiniCssExtractPlugin.loader, 'style-loader', 'css-loader'],
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -56,6 +57,7 @@ module.exports = {
     hot: true,
     compress: true,
     historyApiFallback: true,
+    watchFiles: ['src/**/*'],
   },
   plugins: [
     new HtmlWebpackPlugin({
