@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1685462244872" clover="3.2.0">
+  <project timestamp="1685462244872" name="All files">
+    <metrics statements="36" coveredstatements="36" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3" elements="41" coveredelements="41" complexity="0" loc="36" ncloc="36" packages="1" files="1" classes="1"/>
+    <file name="mealList.js" path="/home/evans/Desktop/Microverse/JavascriptCapstone/module/mealList.js">
+      <metrics statements="36" coveredstatements="36" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="2" type="stmt"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="9" count="2" type="stmt"/>
+      <line num="10" count="3" type="stmt"/>
+      <line num="11" count="3" type="stmt"/>
+      <line num="13" count="3" type="stmt"/>
+      <line num="14" count="3" type="stmt"/>
+      <line num="16" count="3" type="stmt"/>
+      <line num="17" count="3" type="stmt"/>
+      <line num="19" count="3" type="stmt"/>
+      <line num="20" count="3" type="stmt"/>
+      <line num="22" count="3" type="stmt"/>
+      <line num="23" count="3" type="stmt"/>
+      <line num="25" count="3" type="stmt"/>
+      <line num="26" count="3" type="stmt"/>
+      <line num="27" count="3" type="stmt"/>
+      <line num="29" count="3" type="stmt"/>
+      <line num="30" count="3" type="stmt"/>
+      <line num="31" count="3" type="stmt"/>
+      <line num="32" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="34" count="3" type="stmt"/>
+      <line num="35" count="3" type="stmt"/>
+      <line num="37" count="3" type="stmt"/>
+      <line num="38" count="3" type="stmt"/>
+      <line num="39" count="3" type="stmt"/>
+      <line num="41" count="3" type="stmt"/>
+      <line num="42" count="3" type="stmt"/>
+      <line num="44" count="3" type="stmt"/>
+      <line num="45" count="3" type="stmt"/>
+      <line num="46" count="3" type="stmt"/>
+      <line num="48" count="3" type="stmt"/>
+      <line num="52" count="2" type="stmt"/>
+      <line num="53" count="3" type="stmt"/>
+      <line num="54" count="3" type="stmt"/>
+    </file>
+  </project>
+</coverage>
