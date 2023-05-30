@@ -71,4 +71,5 @@ const addComment = (mealId) => {
   });
 };
 
+export { incrementCommentCount };
 export default addComment;
