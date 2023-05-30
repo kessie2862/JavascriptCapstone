@@ -25,7 +25,8 @@ describe('displayMealList', () => {
       <div id="mealsMenuItem"><span>Meals (0)</span></div>
     `;
 
-    const meals = []; // Empty meals array
+    // Scenario when no meal is provided
+    const meals = [];
 
     // Call the function being tested
     displayMealList(meals);
