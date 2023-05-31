@@ -1,8 +1,8 @@
 import './bundle.css';
-import addPopup from './module/addPopup.js';
+import addPopup from '../module/addPopup.js';
 
-import displayMealList from './module/mealList.js';
-import { handleLikeClick } from './module/likes.js';
+import displayMealList from '../module/mealList.js';
+import { handleLikeClick } from '../module/likes.js';
 
 let appID;
 
