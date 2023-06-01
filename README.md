@@ -150,4 +150,4 @@ I'd like to thank Microverse and coding partner for his awesome contribution.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/kessie2862/portfolio/blob/mobile/LICENSE.md) licensed.
+This project is [MIT](LICENSE) licensed.
