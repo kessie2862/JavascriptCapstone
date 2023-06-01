@@ -64,7 +64,7 @@
 
 ## 🚀 Zoom Video (explanation) <a name="zoom"></a>
 
-[Author's Explanation]()
+[Author's Explanation](https://drive.google.com/file/d/1rSGYnAz1xglacDXcPURwLSgECzQ9TU28/view?usp=drive_link)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
