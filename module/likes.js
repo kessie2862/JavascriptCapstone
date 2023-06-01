@@ -22,25 +22,31 @@ export const updateLikeCount = (mealId) => {
 };
 
 // Function to handle the click event on the heart icon
-export const handleLikeClick = (event, appID) => {
+export const handleLikeClick = async (event, appID) => {
   const mealId = event.target.getAttribute('data-meal-id');
 
   const requestBody = {
     item_id: mealId,
   };
 
-  fetch(
-    `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appID}/likes/`,
-    {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(requestBody),
-    },
-  ).then((response) => {
+  try {
+    const response = await fetch(
+      `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appID}/likes/`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(requestBody),
+      }
+    );
+
     if (response.status === 201) {
       updateLikeCount(mealId);
     }
-  });
+  } catch (error) {
+    // Handle any errors that occurred during the request
+    console.error('Error sending like request:', error);
+  }
 };
+
