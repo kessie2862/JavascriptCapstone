@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #fff;
+}
+
+/* Header Nav */
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 88%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 1.3rem 0;
+}
+
+.header-nav > a {
+  color: #636363;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.header-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-nav ul li a {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.header-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Meals List */
+#mealList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 88%;
+  margin: 0 auto;
+}
+
+.meal-card {
+  width: 30%;
+  margin-bottom: 3rem;
+  padding: 10px;
+  border-radius: 0.2rem;
+  background-color: #fff;
+  box-shadow:
+    rgba(9, 30, 66, 0.25) 0 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0 0 0 1px;
+}
+
+.meal-card img {
+  width: 100%;
+  height: auto;
+}
+
+footer h3 {
+  text-decoration: underline;
+}
+
+.meal-card h3 {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #636363;
+}
+
+.likes-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.heart-icon {
+  color: red;
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 1.7rem;
+}
+
+.like-count {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #636363;
+}
+
+.actions-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.comment-button {
+  background-color: #fff;
+  color: #636363;
+  border: 1px solid #ccc;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.comment-button:hover {
+  background-color: #adadad;
+  color: #fff;
+}
+
+.comment-button:focus {
+  outline: none;
+}
+
+.popup {
+  position: fixed;
+  object-fit: contain;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  inset: 0 10%;
+  background-color: #f8f8f8;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mealDetail {
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+  margin-top: 2rem;
+}
+
+.closeBtn {
+  align-self: end;
+  margin-right: 0.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  top: 5%;
+  cursor: pointer;
+}
+
+.popupImg {
+  align-self: center;
+}
+
+.mealDetail__info {
+  margin-top: 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  background-color: #fff;
+  padding: 1.3rem 0;
+}
+
+#form > button {
+  align-self: start;
+  margin-top: 1rem;
+  padding: 0.8rem;
+}
+
+#input {
+  width: 100%;
+  padding: 1rem 0;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  width: 100%;
+  padding: 1rem 0;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 88%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 1.3rem 0;
+}
+
+/* Footer */
+footer {
+  width: 88%;
+  margin: 0 auto;
+  text-align: center;
+  color: #636363;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
