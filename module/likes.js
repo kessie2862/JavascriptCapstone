@@ -29,24 +29,18 @@ export const handleLikeClick = async (event, appID) => {
     item_id: mealId,
   };
 
-  try {
-    const response = await fetch(
-      `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appID}/likes/`,
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(requestBody),
-      }
-    );
+  const response = await fetch(
+    `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appID}/likes/`,
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(requestBody),
+    },
+  );
 
-    if (response.status === 201) {
-      updateLikeCount(mealId);
-    }
-  } catch (error) {
-    // Handle any errors that occurred during the request
-    console.error('Error sending like request:', error);
+  if (response.status === 201) {
+    updateLikeCount(mealId);
   }
 };
-
