@@ -13,11 +13,13 @@ fetch(
   'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/',
   {
     method: 'POST',
-  },
+  }
 )
   .then((response) => response.text()) // Parsing the response as text
   .then((data) => {
     appID = data.trim(); // Storing the retrieved appID after removing whitespace
+
+    console.log(appID);
 
     // Fetching data from the MealDB API for meals starting with the letter 'c'
     fetch('https://www.themealdb.com/api/json/v1/1/search.php?f=c')
