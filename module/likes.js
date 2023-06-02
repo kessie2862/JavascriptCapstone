@@ -22,17 +22,14 @@ export const updateLikeCount = (mealId) => {
 };
 
 // Function to handle the click event on the heart icon
-export const handleLikeClick = (event, appID) => {
-  // Extracting the mealId from the data-meal-id attribute of the clicked element
+export const handleLikeClick = async (event, appID) => {
   const mealId = event.target.getAttribute('data-meal-id');
 
-  // Creating the request body to be sent with the POST request
   const requestBody = {
     item_id: mealId,
   };
 
-  // Sending a POST request to update the like count for the meal with the specified appID
-  fetch(
+  const response = await fetch(
     `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appID}/likes/`,
     {
       method: 'POST',
@@ -41,11 +38,9 @@ export const handleLikeClick = (event, appID) => {
       },
       body: JSON.stringify(requestBody),
     },
-  ).then((response) => {
-    // Checking if the POST request was successful (status code 201)
-    if (response.status === 201) {
-      // Calling the updateLikeCount function to increment the like count in the UI
-      updateLikeCount(mealId);
-    }
-  });
+  );
+
+  if (response.status === 201) {
+    updateLikeCount(mealId);
+  }
 };

@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
-
+/*!******************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/bundle.css ***!
+  \******************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap);
+/*!**********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/bundle.css (1) ***!
+  \**********************************************************************/
 /* Base Styles */
 * {
   margin: 0;
@@ -153,6 +158,7 @@ footer h3 {
   flex-direction: column;
   overflow-x: auto;
   margin-top: 2rem;
+
 }
 
 .closeBtn {
@@ -168,6 +174,10 @@ footer h3 {
 
 .popupImg {
   align-self: center;
+}
+
+.mealDetail {
+  margin-top: 2.5rem;
 }
 
 .mealDetail__info {
@@ -227,3 +237,6 @@ footer {
   margin-bottom: 2rem;
   font-size: 1.5rem;
 }
+
+
+/*# sourceMappingURL=bundle.css.map*/

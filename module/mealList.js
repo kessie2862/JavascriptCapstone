@@ -2,13 +2,12 @@ const displayMealList = (meals) => {
   const mealListContainer = document.getElementById('mealList');
   const mealsMenuItem = document.getElementById('mealsMenuItem');
 
-  // Update menu item with meal count
   mealsMenuItem.firstChild.textContent = `Meals (${meals.length})`;
 
-  // Create meal cards
   const createMealCard = (meal) => {
     const mealCard = document.createElement('div');
     mealCard.className = 'meal-card';
+    mealCard.id = meal.idMeal;
 
     const thumbnailImg = document.createElement('img');
     thumbnailImg.src = `${meal.strMealThumb}/preview`;
