@@ -207,18 +207,6 @@ textarea {
   resize: none;
 }
 
-.comments {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  width: 88%;
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 1.3rem 0;
-}
-
 /* Footer */
 footer {
   width: 88%;
@@ -227,4 +215,40 @@ footer {
   color: #636363;
   margin-bottom: 2rem;
   font-size: 1.5rem;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 768px) {
+  .actions-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .comment-button {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+
+  .meal-card h3 {
+    font-size: 0.9rem;
+  }
+
+  .like-count {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #mealList {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .meal-card {
+    width: 100%;
+  }
 }

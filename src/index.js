@@ -21,7 +21,7 @@ async function initApp() {
   }
 
   const mealResponse = await fetch(
-    'https://www.themealdb.com/api/json/v1/1/search.php?f=a',
+    'https://www.themealdb.com/api/json/v1/1/search.php?f=c',
   );
   const mealData = await mealResponse.json();
   const { meals } = mealData;
