@@ -1,4 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # 📖 JavaScript Capstone Project - Meals App
 
