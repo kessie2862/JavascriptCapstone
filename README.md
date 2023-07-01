@@ -24,7 +24,7 @@
 
 # 📖 JavaScript Capstone Project - Meals Web App <a name="about-project"></a>
 
-**JavaScript Capstone Project - Meals Web App** is an API based web app that retrieves and displays list of meals from a MEALSDB API to the UI and an Involvement API responsible for recording various user interactions (likes and comments)
+**JavaScript Capstone Project - Meals Web App** is an API-based web app that retrieves and displays a list of meals from a MEALSDB API to the UI and an Involvement API responsible for recording various user interactions (likes and comments)
 
 ## 🛠 Built With <a name="built-with"></a>
 
